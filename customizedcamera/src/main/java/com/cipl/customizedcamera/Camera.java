@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 
 
-public class Camera extends Activity {
+public class Camera {
 
-    public void openCamera() {
+    public void openCamera(Activity activity) {
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        startActivity(intent);
+        activity.startActivity(intent);
     }
 }
